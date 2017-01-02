@@ -1,0 +1,15 @@
+version: 5.0.{build}
+
+image: Visual Studio 2015
+
+cache:
+  - node_modules -> package.json
+
+build_script:
+- cmd: >-
+    npm install
+
+    node node_modules\browserify\bin\cmd.js node_modules\rxjs\Rx.js -o Rx.js -s default
+
+after_test:
+  - appveyor PushArtifact "Rx.js"

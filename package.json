@@ -1,0 +1,12 @@
+{
+  "name": "rxjs-repackaging",
+  "version": "5.0.2",
+  "description": "rxjs repackaging",
+  "license": "UNLICENSED",
+  "repository": {},
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "rxjs": "^5.0.2"
+  }
+}
